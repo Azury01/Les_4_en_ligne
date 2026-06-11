@@ -5,7 +5,7 @@ document.getElementById('contact-form').addEventListener('submit', async functio
     const button = document.getElementById('submit-btn');
     const status = document.getElementById('form-status');
     
-    const BACKEND_URL = 'https://formspree.io/f/VOTRE_IDENTIFIANT_FORMSPREE';
+    const BACKEND_URL = `https://formspree.io/f/meewrgpj`;
 
     button.disabled = true;
     button.innerText = 'Envoi en cours...';
@@ -23,7 +23,7 @@ document.getElementById('contact-form').addEventListener('submit', async functio
 
         if (response.ok) {
             status.className = 'success';
-            status.innerText = 'Merci ! Votre message a bien été envoyé. Nous vous répondrons rapidement.';
+            status.innerText = 'Merci ! Votre message a bien ete envoye. Nous vous repondons rapidement.';
             form.reset();
         } else {
             const data = await response.json();
