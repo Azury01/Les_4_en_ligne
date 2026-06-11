@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Les 4 en Ligne - 4L Trophy 2028</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <header>
+        <div class="header-container">
+            <h1>Les 4 en Ligne</h1>
+            <nav>
+                <a href="#concept">Le Projet</a>
+                <a href="#equipe">L'Équipe</a>
+                <a href="#besoins">Nos Besoins</a>
+                <a href="#contact" class="btn-nav">Contact</a>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <section class="hero">
+            <div class="hero-content">
+                <h2>31ème Édition - 2028</h2>
+                <p>Une aventure humaine, solidaire et sportive à travers 3 pays.</p>
+                <a href="#concept" class="btn-primary">Découvrir le projet</a>
+            </div>
+        </section>
+
+        <div class="container">
+            
+            <section id="concept" class="section-center">
+                <h3>C’est quoi le 4L Trophy ?</h3>
+                <p class="description">Le 4L Trophy est le plus grand rallye-raid pour jeunes. Un raid consistant à venir en aide aux personnes démunies du Maroc.</p>
+                
+                <div class="grid-stats">
+                    <div class="stat-card"><h4>12</h4><p>Jours d'aventure</p></div>
+                    <div class="stat-card"><h4>1200</h4><p>Équipages</p></div>
+                    <div class="stat-card"><h4>6000</h4><p>Km parcourus</p></div>
+                    <div class="stat-card"><h4>3</h4><p>Pays</p></div>
+                </div>
+
+                <div class="partners-block">
+                    <h4>Nos engagements & partenaires solidaires</h4>
+                    <p>En partenariat avec <strong>Enfants du Désert</strong> (matériel scolaire et création d'écoles), la <strong>Croix-Rouge Française</strong> (denrées non périssables), <strong>Cap Éco-Solidaire</strong> (château d'eau) et <strong>Surfrider</strong> (sensibilisation à l'environnement).</p>
+                </div>
+            </section>
+
+            <section id="equipe">
+                <div class="section-center">
+                    <h3>Notre Équipe</h3>
+                    <p class="subtitle">Association créée par 4 amis pour gérer cette aventure sereinement. Une team, deux équipages !</p>
+                </div>
+                <div class="grid-team">
+                    <div class="member-card">
+                        <div class="member-info">
+                            <h4>Donovan COLOTTE</h4>
+                            <span class="age">21 ans</span>
+                            <p>Passionné par la mécanique et les motos.</p>
+                        </div>
+                    </div>
+                    <div class="member-card">
+                        <div class="member-info">
+                            <h4>Amaury DOUBLET</h4>
+                            <span class="age">20 ans</span>
+                            <p>Passionné par les sports autos et motos.</p>
+                        </div>
+                    </div>
+                    <div class="member-card">
+                        <div class="member-info">
+                            <h4>Corentin CHAPELLE</h4>
+                            <span class="age">20 ans</span>
+                            <p>Passionné par les sports autos et le pilotage.</p>
+                        </div>
+                    </div>
+                    <div class="member-card">
+                        <div class="member-info">
+                            <h4>Maxence CHAPELAN</h4>
+                            <span class="age">21 ans</span>
+                            <p>Passionné par la mécanique et les autos.</p>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <section id="besoins">
+                <div class="section-center">
+                    <h3>Nos Besoins</h3>
+                    <p class="subtitle">Pour réussir notre projet (budget initial de 25 000€).</p>
+                </div>
+                <div class="grid-lists">
+                    <div class="list-card">
+                        <h4>Matériel Solidaire & Technique</h4>
+                        <ul>
+                            <li>Affaires scolaires (crayons, livres, cahiers...)</li>
+                            <li>Équipements sportifs transportables (ballons...)</li>
+                            <li>Denrées alimentaires non périssables</li>
+                            <li>Équipements mécaniques (outils, fluides...)</li>
+                            <li>Matériel de voyage (couchages, vie...)</li>
+                        </ul>
+                    </div>
+                    <div class="list-card">
+                        <h4>Pourquoi nous soutenir ?</h4>
+                        <ul>
+                            <li><strong>Sponsoring :</strong> Devenez sponsor officiel.</li>
+                            <li><strong>Fiscalité :</strong> Déduction d'impôt à 66% pour les dons financiers.</li>
+                            <li><strong>Médiatisation :</strong> Événement d'envergure européenne suivi par les médias.</li>
+                            <li><strong>Conseils :</strong> Votre expérience technique ou administrative nous intéresse !</li>
+                        </ul>
+                    </div>
+                </div>
+            </section>
+
+            <section id="contact">
+                <div class="section-center">
+                    <h3>Nous Contacter</h3>
+                    <p class="subtitle">Une question ? Envie de nous soutenir ? Envoyez-nous un message instantané.</p>
+                </div>
+
+                <div class="contact-container">
+                    <div class="contact-form-block">
+                        <form id="contact-form">
+                            <div class="form-group">
+                                <label for="name">Nom ou Entreprise</label>
+                                <input type="text" id="name" name="name" required placeholder="Ex: Jean Dupont">
+                            </div>
+                            <div class="form-group">
+                                <label for="email">Adresse Email</label>
+                                <input type="email" id="email" name="email" required placeholder="Ex: jean@exemple.com">
+                            </div>
+                            <div class="form-group">
+                                <label for="message">Votre Message</label>
+                                <textarea id="message" name="message" required placeholder="Votre message ici..."></textarea>
+                            </div>
+                            <button type="submit" id="submit-btn">Envoyer le message</button>
+                        </form>
+                        <div id="form-status" class="hidden"></div>
+                    </div>
+                </div>
+
+                <div class="contact-details">
+                    <p>Email direct : <strong>les4enligne@gmail.com</strong></p>
+                    <p>Instagram : <strong>@Les_4_en_Ligne</strong> | TikTok : <strong>@Lesquatresenligne</strong></p>
+                </div>
+            </section>
+
+        </div>
+    </main>
+
+    <footer>
+        <p>&copy; 2026 - Association Les 4 en Ligne. Tous droits réservés.</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
