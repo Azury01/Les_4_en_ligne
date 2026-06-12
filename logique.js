@@ -1,3 +1,21 @@
+const menuToggle = document.querySelector('.menu-toggle');
+const navMenu = document.querySelector('.nav-menu');
+const navLinks = document.querySelectorAll('.nav-menu a');
+
+if (menuToggle && navMenu) {
+    menuToggle.addEventListener('click', () => {
+        menuToggle.classList.toggle('active');
+        navMenu.classList.toggle('active');
+    });
+
+    navLinks.forEach(link => {
+        link.addEventListener('click', () => {
+            menuToggle.classList.remove('active');
+            navMenu.classList.remove('active');
+        });
+    });
+}
+
 document.getElementById('contact-form').addEventListener('submit', async function(event) {
     event.preventDefault();
 
@@ -23,7 +41,7 @@ document.getElementById('contact-form').addEventListener('submit', async functio
 
         if (response.ok) {
             status.className = 'success';
-            status.innerText = 'Merci ! Votre message a bien ete envoye. Nous vous repondons rapidement.';
+            status.innerText = 'Merci ! Votre message a bien été envoyé. Nous vous répondons rapidement.';
             form.reset();
         } else {
             const data = await response.json();
